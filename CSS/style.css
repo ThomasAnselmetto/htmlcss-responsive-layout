@@ -41,10 +41,6 @@ a {
     background-color: #9792E4;
 }
 
-section {
-    height: 40rem;
-}
-
 .pump {
     font-size: 3rem;
     font-weight: 700;
@@ -166,17 +162,22 @@ header {
 
 
 /* about-us-section */
-.story {
+.seventy {
     width: calc(80% - 5px);
     background-color: red;
+    align-items: center;
 }
 
-.fermentum-odio {
+.thirty {
     width: calc(20% - 5px);
     background-color: blue;
 }
 
 /* first-footer */
+footer {
+    color: white;
+}
+
 .first-footer {
     height: 25rem;
 }
@@ -244,12 +245,16 @@ header {
 }
 
 @media screen and (max-width:768px) {
-    .story {
-        width: 65%;
+    .partner-comment {
+        flex-wrap: wrap;
     }
 
-    .fermentum-odio {
-        width: 35%;
+    .seventy {
+        width: calc(65% - 5px);
+    }
+
+    .thirty {
+        width: calc(35% - 5px);
     }
 
 
@@ -260,11 +265,11 @@ header {
         display: block;
     }
 
-    .story {
+    .seventy {
         width: 100%;
     }
 
-    .fermentum-odio {
+    .thirty {
         width: 100%;
     }
 
