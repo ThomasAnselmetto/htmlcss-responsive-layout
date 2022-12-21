@@ -52,6 +52,7 @@ header {
     background-color: #0084FD;
     position: fixed;
     z-index: 1;
+    color: white;
 }
 
 .d-flex {
@@ -97,7 +98,6 @@ header {
 
 .row {
     width: 100%;
-    background-color: blue;
     display: flex;
     flex-wrap: wrap;
     gap: 10px;
@@ -106,31 +106,31 @@ header {
 .card {
     height: 250px;
     width: calc(33% - 10px);
-    background-color: aqua;
+    background-color: #B5DDFF;
 }
 
 .card.double {
     height: 250px;
     width: calc(66% - 10px);
-    background-color: red;
+    background-color: #B5DDFF;
 }
 
 /* strategic-planning-section */
 .left {
-    background-color: chartreuse;
+    background-color: #9792E4;
     width: 50%;
     height: 300px;
 }
 
 .right {
-    background-color: black;
+    background-color: white;
     width: 50%;
     height: 300px;
 }
 
 /* partners-section */
 .partner-comment {
-    background-color: burlywood;
+    background-color: #9792E4;
 }
 
 .partners-section>.d-flex {
@@ -147,14 +147,13 @@ header {
 /* benefits-section */
 
 .benefit-section .row {
-    background-color: blue;
     display: flex;
     flex-wrap: wrap;
     gap: 10px;
 }
 
 .white-card {
-    background-color: red;
+    background-color: white;
     max-width: calc(100% / 3 - 10px);
     height: 250px;
 }
@@ -164,13 +163,11 @@ header {
 /* about-us-section */
 .seventy {
     width: calc(80% - 5px);
-    background-color: red;
     align-items: center;
 }
 
 .thirty {
     width: calc(20% - 5px);
-    background-color: blue;
 }
 
 /* first-footer */
@@ -198,7 +195,6 @@ footer {
 
     .burger-menu {
         display: block;
-        color: white
     }
 
 
