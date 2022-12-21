@@ -1,0 +1,221 @@
+/* reset */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* containers */
+.container-large {
+    max-width: 1200px;
+    padding: 10px;
+    margin: 0 auto;
+
+}
+
+.container-small {
+    max-width: 900px;
+    padding: 10px;
+    margin: 0 auto;
+}
+
+.violet {
+    background-color: #9792E4;
+}
+
+section {
+    height: 40rem;
+}
+
+.pump {
+    font-size: 3rem;
+    font-weight: 700;
+}
+
+/* header */
+header {
+    width: 100%;
+    background-color: #0084FD;
+    position: fixed;
+    z-index: 1;
+}
+
+.d-flex {
+    display: flex;
+}
+
+.col {
+    flex-direction: column;
+}
+
+.d-flex-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-links-list {
+    display: flex;
+    gap: 20px;
+    justify-content: flex-end;
+
+}
+
+.header-links a {
+    display: inline-block;
+
+}
+
+.logo>a>img {
+    width: 100%;
+
+}
+
+.burger-menu {
+    display: none;
+}
+
+/* structure-section */
+.structure-section {
+    padding-top: 6rem;
+}
+
+.row {
+    width: 100%;
+    background-color: blue;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.card {
+    height: 250px;
+    width: calc(33% - 10px);
+    background-color: aqua;
+}
+
+.card.double {
+    height: 250px;
+    width: calc(66% - 10px);
+    background-color: red;
+}
+
+/* strategic-planning-section */
+.left {
+    background-color: chartreuse;
+    width: 50%;
+    height: 300px;
+}
+
+.right {
+    background-color: black;
+    width: 50%;
+    height: 300px;
+}
+
+/* partners-section */
+.partner-comment {
+    background-color: burlywood;
+}
+
+.partners-section>.d-flex {
+    text-align: center;
+}
+
+.partner-comment img {
+    max-width: 200px;
+}
+
+/* benefits-section */
+
+.benefit-section .row {
+    background-color: blue;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.white-card {
+    background-color: red;
+    max-width: calc(100% / 3 - 10px);
+    height: 250px;
+}
+
+
+
+/* about-us-section */
+
+
+/* first-footer */
+
+
+/* last-footer */
+
+
+
+/* Media Query */
+
+@media screen and (max-width:768px) {
+    .header-links-list {
+        display: none;
+    }
+
+    .burger-menu {
+        display: block;
+        color: white
+    }
+
+
+}
+
+@media screen and (max-width:480px) {
+    .structure-section .row>.card {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width:768px) {
+
+    .strategic-planning-section>.container-small {
+        flex-direction: column;
+    }
+
+    .container-small>.left,
+    .container-small>.right {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width:480px) {
+    .partner-comment {
+        flex-wrap: wrap;
+    }
+
+    .partner-comment img {
+        max-width: 100%;
+    }
+}
+
+@media screen and (max-width:768px) {
+    .white-card {
+        max-width: calc(100% / 2 - 5px);
+    }
+}
+
+@media screen and (max-width:480px) {
+    .white-card {
+        max-width: 100%;
+    }
+}

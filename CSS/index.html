@@ -6,11 +6,182 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./marginandpad.css">
     <link rel="stylesheet" href="./style.css">
 </head>
 
 <body>
+    <!-- creazione di header con il contenitore large e inserimento di ul con 5 link correlati a quali ho tolto list style e text-decoration,uno sara` travestito da button -->
+    <header>
+        <div class="container-large d-flex-header">
+            <div class="header-links logo">
+                <a href="#"><img src="../img/logo.png" alt="logo-img"></a>
+            </div>
+
+            <ul class="header-links-list">
+                <li><a href="#">Planning</a></li>
+                <li><a href="#">Testimonial</a></li>
+                <li><a href="#">Features</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Get Started</a></li>
+            </ul>
+            <a class="burger-menu" href="#"><i class="fa-solid fa-burger"></i></a>
+        </div>
+    </header>
+
+    <!-- prima section creata con card piccole con width 33%-gap e double con 66%-gap -->
+
+    <main>
+        <section class="structure-section">
+            <div class="container-large">
+                <div class="row">
+                    <div class="card double"></div>
+                    <div class="card"></div>
+                    <div class="card"></div>
+                    <div class="card"></div>
+                    <div class="card"></div>
+                </div>
+            </div>
+
+
+
+        </section>
+
+
+
+        <!-- container-small con due card di pari larghezza.left dara` altezza e left si stratcha -->
+
+        <section class="strategic-planning-section violet">
+            <div class="container-small d-flex">
+                <div class="left">
+
+                </div>
+                <div class="right">
+
+                </div>
+            </div>
+        </section>
+
+        <!-- creo 4 div con display flex e flex-direction column che rimangono inalterati con tutte le VP  -->
+        <section class="partners-section">
+            <div class="container-large d-flex col">
+                <div>
+                    <h4>lorem</h4>
+                    <h2>Lorem ipsum dolor sit amet consectetur adipisicing.</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur dolor esse suscipit aperiam ea
+                        reiciendis?</p>
+                </div>
+                <div class="partner-comment d-flex">
+                    <div>
+                        <img src="../img/testimonial1.jpg" alt="">
+                    </div>
+                    <div>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Animi sequi at cupiditate?</p>
+                        <h4>Lorem, ipsum.</h4>
+                    </div>
+                </div>
+
+
+
+                <div class="partner-comment d-flex">
+                    <div>
+                        <img src="../img/testimonial2.jpg" alt="">
+                    </div>
+                    <div>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        <h4>Lorem, ipsum.</h4>
+                    </div>
+                </div>
+
+
+                <div class="partner-comment d-flex">
+                    <div>
+                        <img src="../img/testimonial3.jpg" alt="">
+                    </div>
+                    <div>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        <h4>Lorem, ipsum.</h4>
+                    </div>
+                </div>
+
+
+            </div>
+        </section>
+
+        <!-- stesso principio,creato la row con flex-wrap e successivamente nel media query ho dato la direttiva di creare due colonne a partire dai 768px e 1 sola dai 480px -->
+        <section class="benefits-section violet">
+            <div class="container-large">
+                <h2>Lorem ipsum dolor sit amet consectetur adipisicing.</h2>
+                <div class="row">
+                    <div class="white-card">
+                        <h2 class="pump">01</h2>
+                        <h4>Lorem, ipsum.</h4>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rerum voluptatum magnam, delectus
+                            id unde labore.</p>
+                        <div class="button">more</div>
+                    </div>
+                    <div class="white-card">
+                        <h2 class="pump">01</h2>
+                        <h4>Lorem, ipsum.</h4>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rerum voluptatum magnam, delectus
+                            id unde labore.</p>
+                        <div class="button">more</div>
+                    </div>
+                    <div class="white-card">
+                        <h2 class="pump">01</h2>
+                        <h4>Lorem, ipsum.</h4>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rerum voluptatum magnam, delectus
+                            id unde labore.</p>
+                        <div class="button">more</div>
+                    </div>
+                    <div class="white-card">
+                        <h2 class="pump">01</h2>
+                        <h4>Lorem, ipsum.</h4>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rerum voluptatum magnam, delectus
+                            id unde labore.</p>
+                        <div class="button">more</div>
+                    </div>
+                    <div class="white-card">
+                        <h2 class="pump">01</h2>
+                        <h4>Lorem, ipsum.</h4>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rerum voluptatum magnam, delectus
+                            id unde labore.</p>
+                        <div class="button">more</div>
+                    </div>
+                    <div class="white-card">
+                        <h2 class="pump">01</h2>
+                        <h4>Lorem, ipsum.</h4>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rerum voluptatum magnam, delectus
+                            id unde labore.</p>
+                        <div class="button">more</div>
+                    </div>
+                </div>
+
+
+
+
+
+            </div>
+        </section>
+
+        <section class="about-us-section">
+
+        </section>
+
+
+
+
+
+
+
+
+
+    </main>
+
+
 
 </body>
 
