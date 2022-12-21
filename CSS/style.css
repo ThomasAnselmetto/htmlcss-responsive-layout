@@ -31,6 +31,12 @@ a {
     margin: 0 auto;
 }
 
+.container-xs {
+    max-width: 600px;
+    padding: 10px;
+    margin: 0 auto;
+}
+
 .violet {
     background-color: #9792E4;
 }
@@ -54,6 +60,7 @@ header {
 
 .d-flex {
     display: flex;
+    gap: 10px;
 }
 
 .col {
@@ -134,8 +141,11 @@ header {
     text-align: center;
 }
 
-.partner-comment img {
-    max-width: 200px;
+.img-tonde {
+    width: 50%;
+    min-width: 140px;
+    aspect-ratio: 1;
+    border-radius: 50%;
 }
 
 /* benefits-section */
@@ -156,13 +166,26 @@ header {
 
 
 /* about-us-section */
+.story {
+    width: calc(80% - 5px);
+    background-color: red;
+}
 
+.fermentum-odio {
+    width: calc(20% - 5px);
+    background-color: blue;
+}
 
 /* first-footer */
-
+.first-footer {
+    height: 25rem;
+}
 
 /* last-footer */
-
+.last-footer {
+    height: 25rem;
+    background-color: #333333;
+}
 
 
 /* Media Query */
@@ -218,4 +241,33 @@ header {
     .white-card {
         max-width: 100%;
     }
+}
+
+@media screen and (max-width:768px) {
+    .story {
+        width: 65%;
+    }
+
+    .fermentum-odio {
+        width: 35%;
+    }
+
+
+}
+
+@media screen and (max-width:480px) {
+    .about-us-section>.d-flex {
+        display: block;
+    }
+
+    .story {
+        width: 100%;
+    }
+
+    .fermentum-odio {
+        width: 100%;
+    }
+
+
+
 }
