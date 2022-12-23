@@ -331,9 +331,26 @@ header {
     width: calc(30% - 5px);
 }
 
-.thirty-bottom {
+.thirty.bottom {
     padding-top: 1rem;
+    position: relative;
 }
+
+.thirty.bottom>.fa-quote-left {
+    color: #9792E4;
+    font-size: 4rem;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+/* .thirty.bottom>.fa-quote-right {
+    color: #9792E4;
+    font-size: 4rem;
+    position: absolute;
+    right: 120px;
+    bottom: 230px;
+} */
 
 .seventy.bottom {
     padding-top: 1rem;
